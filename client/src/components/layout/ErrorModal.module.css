@@ -1,0 +1,60 @@
+.backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 300;
+    background: #000000bf;
+}
+
+.modal {
+    position: fixed;
+    background: #ffffffde;
+    width: 500px;
+    height: 150px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto', sans-serif;
+    z-index: 400;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    height: 68%;
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 32%;
+    padding-right: 12px;
+    background: #e65f5f;
+}
+
+.button button {
+    width: 105px;
+    height: 32px;
+    font-size: 17px;
+    border: 1px solid #4f005f;
+    background: #4f005f;
+    color: white;
+    cursor: pointer;
+}
+
+.button button:hover,
+.button button:active {
+    background: #741188;
+    border-color: #741188;
+}
+
+@media screen and (max-width: 498px) {
+    .modal {
+        width: 90%;
+    }
+}

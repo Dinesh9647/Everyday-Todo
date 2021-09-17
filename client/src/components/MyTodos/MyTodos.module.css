@@ -1,0 +1,60 @@
+.my-todos {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.header {
+    height: 20%;
+}
+
+.header h1 {
+    height: 55%;
+    color: #295fa5;
+    padding-top: 16px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 44px;
+    opacity: 0.8;
+}
+
+.footer {
+    display: flex;
+    height: 20%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (max-width: 980px) {
+    .my-todos {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: 0.3s ease;
+    }
+
+    .header h1 {
+        padding-top: 25px;
+        font-size: 38px;
+    }
+
+    .hide {
+        transform: translate(-110%);
+    }
+}
+
+@media screen and (max-width: 457px) {
+    .footer {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-height: 560px) {
+    .header {
+        height: 92px;
+    }
+    .header h1 {
+        padding-top: 0;
+        font-size: 35px;
+    }
+}

@@ -1,0 +1,83 @@
+.filterby {
+    display: flex;
+    justify-content: space-between;
+    width: 62%;
+    min-width: 250px;
+    height: 26%;
+    min-height: 30px;
+}
+
+.filterby button {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 15px;
+    line-height: 15px;
+    width: 32%;
+    cursor: pointer;
+    border: none;
+    background: #ffffffaf;
+    color: #114e9e;
+}
+
+.filterby button:hover {
+    background: #ffffff;
+    border: 2px solid #114e9e;
+}
+
+.change-todos {
+    display: flex;
+    width: 70px;
+    height: 30px;
+    justify-content: space-between;
+}
+
+.change-todos button {
+    width: 30px;
+    color: #ffffff;
+    background: #3aa2d3;
+    border: none;
+    cursor: pointer;
+}
+
+.change-todos button p {
+    display: none;
+}
+
+.change-todos button:hover {
+    background: #ff6ec7; 
+}
+
+.active {
+    background: #ffffff !important;
+    border: 2px solid #114e9e !important;
+}
+
+@media screen and (max-width: 980px) {
+    .change-todos {
+        width: 90px;
+        height: 40px;
+    }
+
+    .change-todos button {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 457px) {
+    .filterby, .change-todos {
+        width: 90%;
+        justify-content: space-evenly;
+    }
+
+    .change-todos span {
+        display: none;
+    }
+
+    .change-todos button p {
+        display: block;
+        font-size: 17px;
+    }
+
+    .change-todos button {
+        width: 45%;
+    }
+}

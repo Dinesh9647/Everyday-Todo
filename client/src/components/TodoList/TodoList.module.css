@@ -1,0 +1,46 @@
+.todo-container {
+    display: flex;
+    width: 100%;
+    height: 60%;
+    padding-top: 10%;
+    justify-content: center;
+}
+
+.notask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #295fa5a1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    width: 400px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.todo-list::-webkit-scrollbar {
+    width: 5px;
+}
+
+.todo-list::-webkit-scrollbar-track {
+    background: #ffffff59;
+}
+
+.todo-list::-webkit-scrollbar-thumb {
+    background: #00000030;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 454px) {
+    .todo-list::-webkit-scrollbar-track {
+        background: transparent;
+    }
+}

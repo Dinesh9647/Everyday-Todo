@@ -1,0 +1,157 @@
+.addtodo {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(
+        to right bottom,
+        #ffffffcc,
+        #ffffff4d
+    );
+}
+
+.header h1 {
+    color: #295fa5;
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+    opacity: 0.7;
+}
+
+.todo-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 47%;
+    min-height: 243px;
+    max-height: 345px;
+}
+
+.todo-inputs {
+    display: flex;
+    flex-direction: column;
+    width: 69%;
+    min-width: 252px;
+    height: 193px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #5cc8fb;
+}
+
+.todo-inputs input {
+    position: relative;
+    width: 270px;
+    height: 40px;
+    border: 5px solid #04f5f5;
+    padding-left: 11px;
+    padding-right: 5px;
+    font-size: 17px;
+    border-radius: 20px;
+    background: linear-gradient(
+        to right bottom,
+        #ffffffcc,
+        #ffffff4d
+    );
+    user-select: none;
+}
+
+.invalid {
+    border: 3px solid #dc3545 !important;
+    background: #f1cece !important;
+}
+
+.warning {
+    color: #dc3545;
+    width: 239px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.todo-inputs input:focus {
+    outline: none;
+}
+
+.submit {
+    width: 115px;
+    height: 41px;
+    font-size: 15px;
+    border-radius: 20px;
+    box-shadow: 7px 7px #ffffffd0;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 17px;
+    color: #114e9e;
+    background: #5cc8fb;
+    cursor: pointer;
+    user-select: none;
+    transition: all ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.submit:hover {
+    background: #66bae0;
+}
+
+.submit:active {
+    box-shadow: 2px 2px #ffffffd8;
+    transform: translateX(2px) translateY(4px);
+}
+
+@media screen and (max-width: 980px) {
+    .addtodo {
+        position: absolute;
+        left: 110%;
+        width: 100%;
+        height: 100%;
+        min-height: 282px;
+        justify-content: space-around;
+        transition: 0.3s ease;
+    }
+
+    .todo-inputs {
+        width: 80%;
+    }
+
+    .todo-form {
+        height: 50%;
+    }
+
+    .header {
+        height: 79px;
+        padding-top: 40px;
+    }
+
+    .header h1 {
+        height: 100%;
+        font-size: 39px;
+    }
+
+    .submit {
+        height: 37px;
+    }
+    
+    .show {
+        transform: translate(-110%);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .todo-inputs input {
+        width: 90%;
+    }
+
+    .warning {
+        width: 82%;
+    }
+}
+
+@media screen and (max-height: 405px) {
+
+    .header {
+        padding-top: 0;
+    }
+}

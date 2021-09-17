@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Poppins&display=swap');
+
+.login, 
+.signup {
+    width: 300px;
+    height: 350px;
+    background: #ffffff66;
+    box-shadow: -1px 4px 28px 0px #000000bf;
+}
+
+.signup {
+    width: 320px;
+    height: 400px;
+}
+
+.login-form, 
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60%;
+}
+
+.signup-form {
+    height: 65%;
+    justify-content: space-between;
+}
+
+.login h1,
+.signup h1 {
+    height: 20%;
+    color: #295fa5;
+    text-align: center;
+    padding-top: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+}
+
+.signup h1 {
+    height: 19%;
+    padding-top: 17px;
+}
+
+.name, 
+.email, 
+.password {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 32px;
+}
+
+.name span, 
+.email span, 
+.password span {
+    width: 30px;
+    height: 32px;
+    background: #ffffffcc;
+    line-height: 30px;
+    padding: 0 7px;
+}
+
+.name input, 
+.email input, 
+.password input {
+    width: 75%;
+    background: #ffffffcc;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.submit {
+    width: 255px;
+    height: 36px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #c22994bf;
+}
+
+.noaccount,
+.haveaccount {
+    height: 20%;
+    text-align: center;
+    padding-top: 9px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.haveaccount {
+    height: 16%;
+    padding-top: 20px;
+}
+
+.tosignup,
+.tologin {
+    text-decoration: none;
+    color: #ac1f82;
+}
+
+.invalid {
+    border: 2px solid #dc3545 !important;
+    background: #f1cece !important;
+}
+
+.warning {
+    color: #dc3545;
+    width: 250px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.submit:hover {
+    background: #c22994;
+}
+
+.tosignup:hover,
+.tologin:hover {
+    text-decoration: underline;
+}

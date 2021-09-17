@@ -1,0 +1,30 @@
+.date-list {
+    position: fixed;
+    background: #fffffff1;
+    width: 183px;
+    height: 222px;
+    top: 20%;
+    left: 31px;
+}
+
+.dates {
+    height: 100%;
+    width: 178px;
+    list-style-type: none;
+    overflow-y: scroll;
+}
+
+.dates::-webkit-scrollbar {
+    width: 6px;
+}
+
+.dates::-webkit-scrollbar-thumb {
+    background: #0000002e;
+    border-radius: 10px;
+}
+
+@media screen and (max-height: 500px) {
+    .date-list {
+        top: 23%;
+    }
+}
